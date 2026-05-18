@@ -26,7 +26,7 @@ $trx = mysqli_fetch_assoc($res_trx);
 
 <head>
     <meta charset="UTF-8">
-    <title>Detail Transaksi #<?= $id_transaksi ?></title>
+    <title>Detail Transaksi<?= $id_transaksi ?></title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,4 +1,3 @@
-````markdown
 # 🏪 MajuMart - Sistem Manajemen Minimarket
 
 Aplikasi web berbasis PHP Native dan Tailwind CSS untuk manajemen stok barang dan transaksi penjualan di toko minimarket. Aplikasi ini dirancang sesuai dengan spesifikasi diagram _Use Case_ yang memisahkan hak akses antara **Admin** (Pemilik/Manajer Toko) dan **Kasir** (Petugas Kasir).
@@ -62,7 +61,6 @@ _Aplikasi ini dikembangkan dan diselesaikan secara final oleh:_
    ```text
    http://localhost/minimarket/login.php
    ```
-````
 
 ---
 

@@ -3,9 +3,9 @@ session_start();
 include 'koneksi.php';
 
 if (isset($_POST['selesai_transaksi']) && isset($_SESSION['keranjang']) && count($_SESSION['keranjang']) > 0) {
-    
-    $id_karyawan = $_SESSION['id_karyawan']; 
-    
+
+    $id_karyawan = $_SESSION['id_karyawan'];
+
     $total_harga = 0;
     foreach ($_SESSION['keranjang'] as $item) {
         $total_harga += $item['subtotal'];
@@ -13,7 +13,7 @@ if (isset($_POST['selesai_transaksi']) && isset($_SESSION['keranjang']) && count
 
     $query_trx = "INSERT INTO transaksi (id_karyawan, total_harga) VALUES ('$id_karyawan', '$total_harga')";
     mysqli_query($conn, $query_trx);
-    
+
     $id_transaksi_baru = mysqli_insert_id($conn);
 
     foreach ($_SESSION['keranjang'] as $item) {
@@ -34,4 +34,3 @@ if (isset($_POST['selesai_transaksi']) && isset($_SESSION['keranjang']) && count
     header("location:index.php?page=transaksi");
     exit;
 }
-?>

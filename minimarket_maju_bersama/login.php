@@ -21,17 +21,60 @@ if (isset($_POST['login'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login - Maju Bersama</title>
     <style>
-        body { font-family: Arial; background-color: #f0f2f1; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .login-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; border-top: 5px solid #1A531A; }
-        h2 { text-align: center; color: #1A531A; }
-        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
-        button { width: 100%; padding: 10px; background: #1A531A; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        button:hover { background: #A4C639; color: black; }
+        body {
+            font-family: Arial;
+            background-color: #f0f2f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            border-top: 5px solid #1A531A;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1A531A;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1A531A;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #A4C639;
+            color: black;
+        }
     </style>
 </head>
+
 <body>
     <div class="login-box">
         <h2>Login Kasir</h2>
@@ -42,4 +85,5 @@ if (isset($_POST['login'])) {
         </form>
     </div>
 </body>
+
 </html>
